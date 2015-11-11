@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.license               = { :type => 'MIT', :file => 'LICENSE' }
     s.homepage              = "http://alexgivens.com"
     s.author                = { "Alex Givens" => "mail@alexgivens.com" }
-    s.source                = { :git => "https://github.com/AlexGivens/AGEqualizerIndicatorView.git", :tag => s.version}
+    s.source                = { :git => "https://github.com/aboruz-futuri/AGEqualizerIndicatorView.git", :tag => s.version}
     s.source_files          = 'AGEqualizerIndicatorView/AGEqualizerIndicatorView.{h,m}'
     s.public_header_files   = 'AGEqualizerIndicatorView/*.h'
     s.requires_arc          = true
