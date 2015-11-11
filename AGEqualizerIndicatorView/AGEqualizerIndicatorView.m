@@ -26,7 +26,7 @@
 #define kBarAnimationDurationKey    @"barAnimationDurationKey"
 
 #define kEqualizerMinNumBars        @1
-#define kEqualizerMaxNumBars        @6
+#define kEqualizerMaxNumBars        @60
 #define kEqualizerMinBPM            @60
 #define kEqualizerMaxBPM            @160
 #define kEqualizerMinBarSpacing     @1
@@ -73,7 +73,7 @@
 - (void)initialize {
     
     NSMutableArray *tempDefaultBarAnimationDurations = [NSMutableArray arrayWithCapacity:6];
-    for (int idx=0; idx < 6; idx++) {
+    for (int idx=0; idx < 60; idx++) {
         double randomDuration = ((double)arc4random() / ARC4RANDOM_MAX) * (1.1 - 0.7) + 0.7;
         [tempDefaultBarAnimationDurations addObject:[NSNumber numberWithDouble:randomDuration]];
     }
